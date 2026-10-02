@@ -1380,13 +1380,155 @@
       .service-card.primary-service > p{min-height:auto}
     }
 
+
+    /* v27 — streamlined expertise */
+    .expertise-grid{grid-template-columns:1fr;max-width:780px;margin:0 auto;}
+    .expertise-copy{max-width:780px;}
+
   </style>
 </head>
 
 <body>
   <header class="site-header">
+    <div class="wrap nav">
+      <a class="logo" href="#top">HELMIO</a>
+      <nav class="nav-links" aria-label="主要ナビゲーション">
+        <a href="#service">SERVICE</a>
+        <a href="#expertise">EXPERTISE</a>
+        <a href="#story">STORY</a>
+        <a href="#note">NOTE</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
     </div>
+  </header>
 
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-field" aria-hidden="true">
+        <span class="orb a"></span>
+        <span class="orb b"></span>
+        <span class="orb c"></span>
+
+        <svg class="hero-current" viewBox="0 0 860 330" preserveAspectRatio="none">
+          <path class="current-line" pathLength="1" d="M18 206 C112 178 171 220 267 198 S438 166 548 195 S714 225 840 183"/>
+          <path class="current-line b" pathLength="1" d="M42 244 C138 225 201 254 295 237 S467 211 572 237 S724 255 830 225"/>
+          <path class="route-line" pathLength="1" d="M515 214 C560 179 592 142 626 106 S698 58 771 45"/>
+          <circle class="route-point p1" cx="515" cy="214" r="4"/>
+          <circle class="route-point p2" cx="626" cy="106" r="3.5"/>
+          <circle class="route-point p3" cx="771" cy="45" r="4"/>
+        </svg>
+
+        <span class="hero-field-word">BEYOND THE HORIZON</span>
+      </div>
+
+      <div class="wrap hero-inner">
+        <div class="hero-meta">
+          <div class="eyebrow hero-reveal r1">HELMIO — TAKE THE HELM OF YOUR LIFE</div>
+        </div>
+
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-reveal r3">可能性は、</span>
+          <span class="hero-reveal r4">想像の先にある。</span>
+        </h1>
+
+        <p class="hero-subcopy hero-reveal r5">
+          人や企業の、まだ伝わっていない価値を見つけ、<br>
+          言葉にし、届く形にする。
+        </p>
+        <div class="hero-services hero-reveal r5">採用広報　｜　展示会・営業支援　｜　教育</div>
+        <div class="hero-actions hero-reveal r5">
+          <a class="hero-button primary" href="#service">SERVICEを見る</a>
+          <a class="hero-button" href="#contact">相談する</a>
+        </div>
+      </div>
+
+      <div class="scroll">SCROLL</div>
+    </section>
+
+
+
+    <section class="service" id="service">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">SERVICE</span>
+          <h2>私たちができること</h2>
+        </div>
+
+        <div class="service-lead reveal">
+          <strong>まだ伝わっていない価値を、届く形へ。</strong>
+          <p>
+            HELMIOは「伝える」を軸に、人や企業の魅力を引き出し、<br>
+            新しい出会いと選択肢をつくります。
+          </p>
+        </div>
+
+        <div class="service-grid service-grid--primary">
+          <a class="service-card primary-service reveal" href="/recruiting/">
+            <div class="service-card-media">
+              <img src="assets/service-recruiting.webp" alt="学生目線で企業の魅力を伝える採用広報支援">
+            </div>
+            <div class="service-no">01</div>
+            <div class="service-kicker">RECRUITING PR</div>
+            <h3>採用広報支援</h3>
+            <p>
+              「知らなかった会社を、働いてみたい会社へ。」<br><br>
+              学生目線の取材と、プロによる企画・編集・発信で、企業の魅力を学生に届く採用コンテンツへ。
+              <strong>独自の学生ネットワーク2,000人以上にリーチします。</strong>
+            </p>
+            <div class="service-link"><span>詳しく見る</span><span>→</span></div>
+          </a>
+
+          <a class="service-card primary-service reveal" href="/exhibition/">
+            <div class="service-card-media">
+              <img src="assets/service-exhibition.webp" alt="展示会で来場者にプレゼンテーションを行う様子">
+            </div>
+            <div class="service-no">02</div>
+            <div class="service-kicker">EXHIBITION / SALES COMMUNICATION</div>
+            <h3>展示会・営業コミュニケーション支援</h3>
+            <p>
+              「5秒で足を止め、1分で理解させ、商談につなげる。」<br><br>
+              展示会プレゼンの構成、営業資料・スライド、台本、登壇レッスン、リハーサルまで。
+              <strong>「伝わる」を、次のアクションにつなげます。</strong>
+            </p>
+            <div class="service-link"><span>詳しく見る</span><span>→</span></div>
+          </a>
+
+          <a class="service-card primary-service reveal" href="/school/">
+            <div class="service-card-media">
+              <img src="assets/service-education.webp" alt="子ども向けAI時代の伝える力スクール">
+            </div>
+            <div class="service-no">03</div>
+            <div class="service-kicker">EDUCATION</div>
+            <h3>AI時代の「伝える力」教育</h3>
+            <p>
+              「自分で考え、自分の言葉で伝える。その力が、未来をひらく。」<br><br>
+              全国の仲間やAIとの対話を通して、自分なりに考え、言葉にして相手へ届ける力を育てます。<br><br>
+              <strong>青山学院大学 教育人間科学部 教育学科・益川弘如教授監修。</strong>
+            </p>
+            <div class="service-link"><span>詳しく見る</span><span>→</span></div>
+          </a>
+        </div>
+
+        <div class="other-service reveal">
+          <div class="other-service-label">OTHER SERVICE</div>
+          <div>
+            <h3>アナウンサー・プロ人材キャスティング</h3>
+            <p>
+              企画・イベント・映像など、目的に合う「伝え手」を企業の現場へ。
+              放送局経験者を中心としたプロ人材をご紹介します。
+            </p>
+          </div>
+          <a href="https://hel-mio.com/professionals.html">詳しく見る →</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="expertise" id="expertise">
+      <div class="wrap">
+        <div class="expertise-grid">
           <div class="expertise-copy reveal">
             <span class="eyebrow">OUR EXPERTISE</span>
             <h2>「伝える」を、事業の力に。</h2>
